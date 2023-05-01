@@ -1,17 +1,27 @@
 {
-  "private": true,
-  "scripts": {
-    "build": "turbo run build",
-    "dev": "turbo run dev",
-    "lint": "turbo run lint",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
-  },
-  "devDependencies": {
-    "eslint": "^7.32.0",
-    "eslint-config-custom": "workspace:*",
-    "prettier": "^2.5.1",
-    "turbo": "latest"
-  },
-  "packageManager": "pnpm@7.15.0",
-  "name": "primum-take-home"
+	"private": true,
+	"scripts": {
+		"build": "turbo run build",
+		"dev": "turbo run dev",
+		"lint": "turbo run lint",
+		"format": "prettier --write \"**/*.{ts,tsx,js,json,md}\""
+	},
+	"devDependencies": {
+		"eslint": "^8.39.0",
+		"eslint-config-custom": "workspace:*",
+		"prettier": "^2.8.8",
+		"prettier-plugin-tailwindcss": "^0.2.8",
+		"turbo": "^1.9.3"
+	},
+	"pnpm": {
+		"peerDependencyRules": {
+			"ignoreMissing": [
+				"@babel/*",
+				"expo-modules-*",
+				"typescript"
+			]
+		}
+	},
+	"packageManager": "pnpm@7.15.0",
+	"name": "primum-take-home"
 }
