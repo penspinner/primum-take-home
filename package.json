@@ -3,8 +3,11 @@
 	"scripts": {
 		"build": "turbo run build",
 		"dev": "turbo run dev",
+		"dev:web": "turbo run dev --filter web",
+		"dev:native": "turbo run dev --filter native",
 		"lint": "turbo run lint",
-		"format": "prettier --write \"**/*.{ts,tsx,js,json,md}\""
+		"format": "prettier --write \"**/*.{ts,tsx,js,json,md}\"",
+		"test:web": "turbo run test:int"
 	},
 	"devDependencies": {
 		"eslint": "^8.39.0",
